@@ -92,7 +92,7 @@ const MyTestimonials = () => {
 
     return (
         <section id="testimonials" className="py-20">
-            <SectionWrapper className="pb-0">
+            <div className="pb-0">
                 <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                     <div className="max-w-2xl sm:text-center md:mx-auto">
                         <h2 className="text-gray-800 text-3xl font-extrabold sm:text-4xl">
@@ -129,7 +129,7 @@ const MyTestimonials = () => {
                         </a>
                     </div>
                 </div>
-            </SectionWrapper>
+            </div>
         </section>
     );
 };
