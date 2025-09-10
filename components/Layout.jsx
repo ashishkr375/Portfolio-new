@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <Navbar />
+            <FloatingTech />
             <div className="relative z-10">
                 <main>{children}</main>
             </div>
