@@ -1,0 +1,1 @@
+Create a profile.jpg file here and place your profile photo.
