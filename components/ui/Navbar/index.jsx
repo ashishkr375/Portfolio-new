@@ -62,12 +62,15 @@ const Navbar = () => {
                                 navigation.map((item, idx) => {
                                     return (
                                         <li key={idx} className="duration-150 hover:text-gray-900">
-                                            <Link
-                                                href={item.path}
-                                                className="block"
-                                            >
-                                                {item.title}
-                                            </Link>
+                                            {item.path && item.path.startsWith('#') ? (
+                                                <a href={item.path} className="block">
+                                                    {item.title}
+                                                </a>
+                                            ) : (
+                                                <Link href={item.path} className="block">
+                                                    {item.title}
+                                                </Link>
+                                            )}
                                         </li>
                                     )
                                 })
