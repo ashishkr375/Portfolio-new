@@ -12,3 +12,55 @@
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
 }
+
+:root {
+  --grid-color: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 50% -200px, rgba(59, 130, 246, 0.12), transparent 60%),
+    radial-gradient(800px 400px at 100% 0, rgba(236, 72, 153, 0.10), transparent 70%),
+    #ffffff;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #06b6d4, #3b82f6, #a855f7, #ec4899);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-shift 8s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.float-slow { animation: float 10s ease-in-out infinite; }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.glass {
+  backdrop-filter: saturate(180%) blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold text-white shadow-lg shadow-pink-200/30 bg-gradient-to-r from-pink-500 via-fuchsia-500 to-indigo-500 hover:from-indigo-500 hover:via-fuchsia-500 hover:to-pink-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold text-gray-800 bg-white/60 border border-gray-200 hover:bg-white/80 backdrop-blur focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-300;
+}
