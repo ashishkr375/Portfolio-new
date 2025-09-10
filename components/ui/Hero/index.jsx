@@ -1,11 +1,8 @@
 import NavLink from "../NavLink";
 
 const Hero = () => (
-  <section id="home" className="relative overflow-hidden">
-    <div className="pointer-events-none absolute -top-24 -left-24 h-80 w-80 rounded-full bg-gradient-to-br from-pink-300 via-fuchsia-300 to-indigo-300 opacity-40 blur-3xl"></div>
-    <div className="pointer-events-none absolute top-1/2 -right-24 h-96 w-96 -translate-y-1/2 rounded-full bg-gradient-to-br from-cyan-200 via-sky-200 to-blue-200 opacity-50 blur-3xl"></div>
-
-    <div className="custom-screen py-24 sm:py-32 text-gray-700 bg-grid">
+  <section id="home" className="relative">
+    <div className="custom-screen py-24 sm:py-32 text-gray-700">
       <div className="space-y-8 max-w-5xl mx-auto">
         <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/70 px-3 py-1 text-xs font-medium text-gray-700 backdrop-blur">
           <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-pink-500 to-indigo-500"></span>
@@ -59,11 +56,10 @@ const Hero = () => (
 
           <div className="md:w-2/5 mt-12 md:mt-0">
             <div className="relative">
-              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-pink-400/40 via-fuchsia-400/30 to-indigo-400/40 blur-md"></div>
-              <div className="relative rounded-2xl bg-white/80 p-1 backdrop-blur">
+              <div className="relative rounded-2xl bg-white p-1">
                 <img src="/profile.jpg" alt="Ashish Kumar" className="rounded-xl shadow-xl w-full object-cover" />
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-white/90 px-4 py-3 shadow-lg rounded-xl backdrop-blur">
+              <div className="absolute -bottom-4 -right-4 bg-white px-4 py-3 shadow-lg rounded-xl">
                 <p className="font-semibold text-gray-800">
                   <span className="block text-xs text-gray-500">Based in</span>
                   Patna, India
