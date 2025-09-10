@@ -79,7 +79,7 @@ const Navbar = () => {
                             <div className="flex items-center justify-center gap-x-3 font-medium text-sm mt-5">
                               <NavLink
                                 href="/assets/Ashish_Kumar_Resume.pdf"
-                                className="btn-primary mb-5"
+                                className="btn-ghost mb-5"
                               >
                                 Download Resume
                               </NavLink>
