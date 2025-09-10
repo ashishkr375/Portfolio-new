@@ -1,12 +1,10 @@
 import Head from "next/head";
-import GradientWrapper from "../components/GradientWrapper";
 import Hero from "../components/ui/Hero";
 import About from "../components/ui/About";
 import Projects from "../components/ui/Projects";
 import Experience from "../components/ui/Experience";
 import Contact from "../components/ui/Contact";
 import MyTestimonials from "../components/ui/MyTestimonials";
-import TechStack from "../components/ui/TechStack";
 import Skills from "../components/ui/Skills";
 import Script from "next/script";
 import FooterCTA from "../components/ui/FooterCTA";
@@ -43,22 +41,14 @@ export default function Home() {
       
       <About />
       
-      <GradientWrapper>
-        <TechStack />
-      </GradientWrapper>
-      
       <Skills />
-      
-      <GradientWrapper>
-        <Projects />
-      </GradientWrapper>
-      
+
+      <Projects />
+
       <Experience />
-      
-      <GradientWrapper>
-        <MyTestimonials />
-      </GradientWrapper>
-      
+
+      <MyTestimonials />
+
       <Contact />
       
       <FooterCTA />

@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Footer from "./ui/Footer"
 import Navbar from "./ui/Navbar"
+import FloatingTech from "./ui/FloatingTech"
 
 const Layout = ({ children }) => {
     return (
@@ -12,7 +13,10 @@ const Layout = ({ children }) => {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <Navbar />
-            <main>{children}</main>
+            <FloatingTech />
+            <div className="relative z-10">
+                <main>{children}</main>
+            </div>
             <Footer />
         </>
     )

@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="py-16 bg-gray-50">
+    <section id="about" className="py-16">
       <div className="custom-screen">
         <div className="mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-800 sm:text-4xl">
@@ -12,7 +12,7 @@ const About = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+          <div className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300">
             <h3 className="text-xl font-semibold mb-6 text-gray-800 flex items-center">
               <svg className="w-6 h-6 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
@@ -85,7 +85,7 @@ const About = () => {
             </div>
           </div>
           
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-xl border border-gray-200">
             <h3 className="text-xl font-semibold mb-4 text-gray-800">My Passion for Coding</h3>
             <p className="text-gray-600 mb-4">
               I love solving problems and building things through code. Programming isn't just my profession—it's my passion. 
@@ -98,7 +98,7 @@ const About = () => {
             </p>
           </div>
           
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 rounded-xl border border-gray-200">
             <h3 className="text-xl font-semibold mb-4 text-gray-800">Skills</h3>
             <div className="space-y-4">
               <div>
@@ -145,7 +145,7 @@ const About = () => {
           </div>
         </div>
         
-        <div className="mt-12 p-6 bg-white rounded-lg shadow-md">
+        <div className="mt-12 p-6 bg-white rounded-xl border border-gray-200">
           <h3 className="text-xl font-semibold mb-4 text-gray-800">Contact Information</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>

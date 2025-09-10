@@ -34,7 +34,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <nav className={`bg-white w-full md:static md:text-sm ${state ? "fixed z-10 h-full" : ""}`}>
+            <nav className={`sticky top-0 z-50 w-full md:static md:text-sm border-b border-gray-200/70 bg-white ${state ? "fixed z-50 h-full" : ""}`}>
                 <div className="custom-screen items-center mx-auto md:flex">
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Brand />
@@ -62,12 +62,15 @@ const Navbar = () => {
                                 navigation.map((item, idx) => {
                                     return (
                                         <li key={idx} className="duration-150 hover:text-gray-900">
-                                            <Link
-                                                href={item.path}
-                                                className="block"
-                                            >
-                                                {item.title}
-                                            </Link>
+                                            {item.path && item.path.startsWith('#') ? (
+                                                <a href={item.path} className="block">
+                                                    {item.title}
+                                                </a>
+                                            ) : (
+                                                <Link href={item.path} className="block">
+                                                    {item.title}
+                                                </Link>
+                                            )}
                                         </li>
                                     )
                                 })
@@ -76,7 +79,7 @@ const Navbar = () => {
                             <div className="flex items-center justify-center gap-x-3 font-medium text-sm mt-5">
                               <NavLink
                                 href="/assets/Ashish_Kumar_Resume.pdf"
-                                className="text-white text-bold text-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 mb-5 hover:from-yellow-500 hover:via-red-500 hover:to-pink-500 hover:ring ring-transparent ring-offset-2 transition"
+                                className="btn-ghost mb-5"
                               >
                                 Download Resume
                               </NavLink>
