@@ -49,6 +49,12 @@ body {
   50% { transform: translateY(-10px); }
 }
 
+.float-drift { animation: drift var(--duration, 20s) ease-in-out infinite; will-change: transform; }
+@keyframes drift {
+  0% { transform: translate3d(0,0,0) rotate(0); }
+  100% { transform: translate3d(var(--tx, 24px), var(--ty, -24px), 0) rotate(var(--rot, 8deg)); }
+}
+
 .glass {
   backdrop-filter: saturate(180%) blur(10px);
   background: rgba(255, 255, 255, 0.6);
