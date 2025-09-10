@@ -33,11 +33,11 @@ const FloatingTech = () => {
       const size = Math.round(randomBetween(28, 52));
       const top = Math.round(randomBetween(5, 85));
       const left = Math.round(randomBetween(5, 90));
-      const tx = Math.round(randomBetween(-40, 40));
-      const ty = Math.round(randomBetween(-40, 40));
-      const rot = Math.round(randomBetween(-12, 12));
-      const duration = randomBetween(14, 28).toFixed(2) + "s";
-      const delay = randomBetween(-8, 8).toFixed(2) + "s";
+      const tx = Math.round(randomBetween(-80, 80));
+      const ty = Math.round(randomBetween(-80, 80));
+      const rot = Math.round(randomBetween(-18, 18));
+      const duration = randomBetween(6, 12).toFixed(2) + "s";
+      const delay = randomBetween(-3, 3).toFixed(2) + "s";
       return {
         key: i,
         src: ICON_SOURCES[i % ICON_SOURCES.length],
