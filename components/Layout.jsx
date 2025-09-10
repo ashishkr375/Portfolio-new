@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Footer from "./ui/Footer"
 import Navbar from "./ui/Navbar"
+import FloatingTech from "./ui/FloatingTech"
 
 const Layout = ({ children }) => {
     return (
